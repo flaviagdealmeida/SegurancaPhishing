@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Segurança da Informação</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css" />
+  
+</head>
+<body class="fundo">
+    
+<div class="container-sm">
+       
+    <img src="logomarca.png" alt="logomarca" />
+
+        <form method="POST" class="border border-light">
+          <div class="form-group p">
+            <label for="usuario">Username</label> <br />
+            <input type="text" class="form-control" id="usuario" name="usuario" pattern="[a-z]{5,15}" title="Verifique valor digitado"/>
+            <small id="validarUsuario"></small>
+          </div>
+          
+          <div class="form-group">
+            <label>Password</label> <br />
+            <input type="password" class="form-control" id="senha" name="senha" pattern="[0-9]{6,10}" title="Verifique valor digitado"/>
+            <small id="validarSenha"></small>
+          </div>
+    
+          <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked="">
+                Remember Me
+            </label>
+          </div>
+
+    
+          <div>
+            <input type="submit" class="btn btn-info" value="Log In" onclick="validar()"/>
+    
+          </div>
+    
+        </form>
+
+        <p>
+            <a href="#" class="text-info">Lost your password?</a>
+        </p>
+        <p>
+            <a href="#=" >&larr; Back to My Blog</a>
+        </p>
+
+
+    
+</div>
+
+
+    <script>
+        
+       
+       function validar(){
+
+
+        var usuario, senha ;
+
+        usuario = "admin";
+        senha = "123456";
+     
+          /*   if (usuario != document.getElementById("usuario").value){
+                document.getElementById("validarUsuario").innerHTML = "Usuario incorreto!"
+            } */
+
+
+            if(usuario != document.getElementById("usuario").value || 
+               senha != document.getElementById("senha").value){
+
+                alert("Usuário ou senha incorretos!")
+
+            }
+
+
+
+       }
+        
+        
+      
+
+
+    </script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
