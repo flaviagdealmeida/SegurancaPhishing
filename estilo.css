@@ -53,23 +53,48 @@ table {
 }
 
 .container-sm{
-	background-color: white;
 	width: 40%;
 	margin-top: 12%
 }
 
 .container-sm img{
-	width: 50%;
-	margin-left: 25%;
+	width: 80%;
+	margin-left: 10%;
 	margin-top: 4%;
 }
 
 .container-sm form{
 	width: 70%;
 	margin-left: 15%;
+	margin-top: 5%;
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+.form-group{
+	margin-top: 5%;
 }
 
 
 .form-control{
 	background-color:#f2f2f2;
+}
+
+
+.btn-info{
+	border-radius: 13px;
+	text-shadow: 0.1em 0.1em grey;
+	font-weight: bold;
+	float: right
+}
+
+.form-check{
+	margin-left: -9%;
+	padding-bottom: 10%;
+}
+
+p{
+	margin-left: 20%;
 }
